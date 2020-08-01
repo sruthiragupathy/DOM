@@ -1,0 +1,41 @@
+body{
+    box-sizing: border-box;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    
+
+}
+
+#board{
+    height:500px;
+    width:500px;
+    
+    display:flex;
+    flex-direction: column;
+}
+
+.row{
+    flex:1;
+    /* border:1px solid grey; */
+    display: flex;
+}
+
+.column{
+    flex:1;
+    border:1px solid grey;
+}
+
+#btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background-color: black;
+    color:white;
+}
+
+#btn:hover{
+    background-color: grey;
+
+}
