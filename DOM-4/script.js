@@ -73,14 +73,18 @@ Board.prototype.bindEvents = function(){
         }
         else{
             this.el2.classList.add("shake");
-            setTimeout(this.shakethegrid,1000);
-            this.score = 0;
-            this.el1.innerHTML = `Score:${this.score}`;
-            this.el2.innerHTML="";
-            this.rows=4;
-            this.cols=4;
-            this.generateBoard(this.rows,this.cols);    
+            setTimeout(()=>{
+                console.log("hi")
+                this.el2.classList.remove("shake");
+                this.score = 0;
+                this.el1.innerHTML = `Score:${this.score}`;
+                this.el2.innerHTML="";
+                this.rows=4;
+                this.cols=4;
+                this.generateBoard(this.rows,this.cols);    
 
+            },1000);
+            
 
 
 
